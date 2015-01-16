@@ -1,0 +1,66 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.features {
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.thumbnail.no-border:not(:hover) {
+  border-color: transparent;
+}
+
+h1, h2{
+  font-weight: 700;
+
+}
+
+h3 {
+  color: #575757;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 800px;
+  }
+}
+
+section {
+  margin: 25px 0;
+
+  .project-metadata {
+    margin-top: 50px;
+    color:#999;
+  }
+
+}
+
+section.rushhourcrush {
+  h1, h2 {
+    color: #DA3D5D;
+  }
+}
+
+section.bigstreet {
+  h1, h2 {
+    color: #B25438;
+  }
+}
+
+
