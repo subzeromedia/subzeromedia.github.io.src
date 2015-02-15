@@ -9,215 +9,284 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel='stylesheet' href='bower_components/fontawesome/css/font-awesome.css' />
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top">Subzero Media</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden active">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">About</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-    <div class="container">
-      <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"></h4>
+    <header>
+      <div class="img-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="img-container">
+              <img src="images/profile.jpg" alt="">
             </div>
-            <div class="modal-body">
-              <img class="modal-image"/>
+            <div class="intro-text">
+              <h1>Nik Grinkevich</h1>
+              <h3>Full Stack Web Developer</h3>
             </div>
           </div>
         </div>
       </div>
-      <section class="bigstreet">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Bigstreet.co.uk</h1>
-            <p class="lead text-muted">Innovative property finder built with latest web techologies</p>
+    </header>
+    
+   
+
+    <h1 class="portfolio-header text-center">Portfolio</h1>
+    
+      
+    <section id="portfolio">
+      
+      <div id="owl-example" class="owl-carousel">
+
+        <div class="rushhourcrush">
+          <div class="container">
+            
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Rush Hour Crush</h2>
+                <p class="lead text-muted">A new social platform that helps people find each other and communicate efficiently</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-7">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/rushhourcrush.jpg" data-title="rushhourcrush.com" class="thumbnail no-border">
+                  <img src="images/rushhourcrush.jpg">
+                </a>
+              </div>
+              <div class="col-md-5 features">
+                <h2>Key Features</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <h4><i class="fa fa-mobile"></i> Hybrid HTML5 app</h4>
+                    <p class="text-muted">Works on iOS, Android and Windows Phone</p> 
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-facebook-square"></i> Facebook Integration</h4>
+                    <p class="text-muted">Fetching profile details, photos and user interests</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-crosshairs"></i> Geo Location</h4>
+                    <p class="text-muted">HTML5 geolocation with GeoIP fallback</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-comments"></i> Private Messages</h4>
+                    <p class="text-muted">Easy to use interface to manage your communications</p>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-4">
+                <h2>API Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>RESTful API (Python/Django)</li>
+                  <li>PostgreSQL/PostGIS Spatial database</li>
+                  <li>Admin panel</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2>App Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Cordova platform</li>
+                  <li>AngularJS + Ionic Framework</li>
+                  <li>Facebook Login</li>
+                  <li>OAuth 2.0</li>
+                </ul>
+              </div>
+              
+              <div class="col-md-4">
+                <h2>Highly Scalable</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Ansible Deploy automation</li>
+                  <li>Celery Distributed Task Queue</li>
+                  <li>RabbitMQ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row project-metadata">
+              <div class="col-md-12">
+                <p><strong>Client:</strong> <a href="http://rushhourcrush.com">Backbone Labs Ltd</a> <br><strong>Status:</strong> Beta</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-7">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/main.jpg" data-title="Bigstreet.co.uk" class="thumbnail">
-              <img src="images/main.jpg">
-            </a>
+      
+
+        <div class="bigstreet">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Bigstreet.co.uk</h2>
+                <p class="lead text-muted">Innovative property finder built with latest web techologies</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/main.jpg" data-title="Bigstreet.co.uk" class="thumbnail">
+                  <img src="images/main.jpg">
+                </a>
+              </div>
+              <div class="col-md-5 features">
+                <h2>Key Features</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <h3><i class="fa fa-search"></i> Search naturaly </h3>
+                    <p class="text-muted">e.g. 1 bedroom flat in Southwark near great parks</p> 
+                  </li>
+                  <li>
+                    <h3><i class="fa fa-globe"></i> Open Data aggregation</h3>
+                    <p class="text-muted"><a href="http://data.police.uk">data.police.uk</a>, Google POI including schools and hospitals</p>    
+                  </li>
+                  <li>
+                    <h3><i class="fa fa-users"></i> Community driven data collection</h3>
+                    <p class="text-muted">Neighbourhood reviews, Car Parks info, Nearby Parks</p>    
+                  </li>
+                  <li>
+                    <h3><i class="fa fa-envelope"></i> Email alerts</h3>
+                    <p class="text-muted">Be the first to hear about new properties you're interested in.</p>    
+                  </li>
+                  <li>
+                    <h3><i class="fa fa-comments"></i> Private Messages</h3>
+                    <p class="text-muted">Easy to use interface to manage your communications</p>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/detail.jpg" data-title="Property profile" class="thumbnail">
+                  <img src="images/detail.jpg">
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/poi-full.jpg" data-title="Property profile with local amenities" class="thumbnail">
+                  <img src="images/poi.jpg">
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/poi2-full.jpg" data-title="Local amenities and users provided points of interests" class="thumbnail">
+                  <img src="images/poi2.jpg">
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/dashboard-full.jpg" data-title="Dashboard" class="thumbnail">
+                  <img src="images/dashboard.jpg">
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/messages-full.jpg" data-title="Private Messages - Easy to use interface to manage your communications" class="thumbnail">
+                  <img src="images/messages.jpg">
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/alerts.jpg" data-title="Email alerts - Be the first to hear about new properties you're interested in." class="thumbnail">
+                  <img src="images/alerts.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Dashboard features</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Stats and analytics</li>
+                  <li>Viewing requests & Offers</li>
+                  <li>Watchlist</li>
+                  <li>Easy forms for listing your property</li>
+                  <li>Private messages</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2>Trader Features</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Seller Profile</li>
+                  <li>Bulk data & images upload</li>
+                  <li>Import XLS spreadsheets</li>
+                  <li>Paypal Payments</li>
+                  <li>SagePay payment gateway integration</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2>Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>PostgreSQL/PostGIS Spatial database</li>
+                  <li>SOLR indexed search</li>
+                  <li>RESTful API backend (Python/Django)</li>
+                  <li>AngularJS frontend</li>
+                  <li>OAuth 2.0 </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row project-metadata">
+              <div class="col-md-12">
+                <p><strong>Client:</strong> <a href="http://cyb.co.uk">Cyber Interactive Ltd</a> <br><strong>Status:</strong> Beta</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-5 features">
-            <h1>Key Features</h1>
-            <ul class="list-unstyled">
-              <li>
-                <h3><i class="fa fa-search"></i> Search naturaly </h3>
-                <p class="text-muted">e.g. 1 bedroom flat in Southwark near great parks</p> 
-              </li>
-              <li>
-                <h3><i class="fa fa-globe"></i> Open Data aggregation</h3>
-                <p class="text-muted"><a href="http://data.police.uk">data.police.uk</a>, Google POI including schools and hospitals</p>    
-              </li>
-              <li>
-                <h3><i class="fa fa-users"></i> Community driven data collection</h3>
-                <p class="text-muted">Neighbourhood reviews, Car Parks info, Nearby Parks</p>    
-              </li>
-              <li>
-                <h3><i class="fa fa-envelope"></i> Email alerts</h3>
-                <p class="text-muted">Be the first to hear about new properties you're interested in.</p>    
-              </li>
-              <li>
-                <h3><i class="fa fa-comments"></i> Private Messages</h3>
-                <p class="text-muted">Easy to use interface to manage your communications</p>    
-              </li>
-            </ul>
+
+        </div>
+      
+      </div>
+
+    </section>  
+
+
+    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <img class="modal-image"/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/detail.jpg" data-title="Property profile" class="thumbnail">
-              <img src="images/detail.jpg">
-            </a>
-          </div>
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/poi-full.jpg" data-title="Property profile with local amenities" class="thumbnail">
-              <img src="images/poi.jpg">
-            </a>
-          </div>
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/poi2-full.jpg" data-title="Local amenities and users provided points of interests" class="thumbnail">
-              <img src="images/poi2.jpg">
-            </a>
-          </div>
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/dashboard-full.jpg" data-title="Dashboard" class="thumbnail">
-              <img src="images/dashboard.jpg">
-            </a>
-          </div>
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/messages-full.jpg" data-title="Private Messages - Easy to use interface to manage your communications" class="thumbnail">
-              <img src="images/messages.jpg">
-            </a>
-          </div>
-          <div class="col-xs-2">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/alerts.jpg" data-title="Email alerts - Be the first to hear about new properties you're interested in." class="thumbnail">
-              <img src="images/alerts.jpg">
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Dashboard features</h2>
-            <ul class="list-unstyled text-muted">
-              <li>Stats and analytics</li>
-              <li>Viewing requests & Offers</li>
-              <li>Watchlist</li>
-              <li>Easy forms for listing your property</li>
-              <li>Private messages</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2>Trader Features</h2>
-            <ul class="list-unstyled text-muted">
-              <li>Seller Profile</li>
-              <li>Bulk data & images upload</li>
-              <li>Import XLS spreadsheets</li>
-              <li>Paypal Payments</li>
-              <li>SagePay payment gateway integration</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2>Techical details</h2>
-            <ul class="list-unstyled text-muted">
-              <li>PostgreSQL/PostGIS Spatial database</li>
-              <li>SOLR indexed search</li>
-              <li>RESTful API backend (Python/Django)</li>
-              <li>AngularJS frontend</li>
-              <li>OAuth 2.0 </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row project-metadata">
-          <div class="col-md-12">
-            <p><strong>Client:</strong> <a href="http://cyb.co.uk">Cyber Interactive Ltd</a> <br><strong>Status:</strong> Beta</p>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section class="rushhourcrush">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Rush Hour Crush</h1>
-            <p class="lead text-muted">A new social platform that helps people find each other and communicate efficiently</p>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-7">
-            <a data-toggle="modal" data-target="#previewModal" data-image-url="images/rushhourcrush.jpg" data-title="rushhourcrush.com" class="thumbnail no-border">
-              <img src="images/rushhourcrush.jpg">
-            </a>
-          </div>
-          <div class="col-md-5 features">
-            <h1>Key Features</h1>
-            <ul class="list-unstyled">
-              <li>
-                <h3><i class="fa fa-mobile"></i> Hybrid HTML5 app</h3>
-                <p class="text-muted">Works on iOS, Android and Windows Phone</p> 
-              </li>
-              <li>
-                <h3><i class="fa fa-facebook-square"></i> Facebook Integration</h3>
-                <p class="text-muted">Fetching profile details, photos and user interests</p>    
-              </li>
-              <li>
-                <h3><i class="fa fa-crosshairs"></i> Geo Location</h3>
-                <p class="text-muted">HTML5 geolocation with GeoIP fallback</p>    
-              </li>
-              <li>
-                <h3><i class="fa fa-comments"></i> Private Messages</h3>
-                <p class="text-muted">Easy to use interface to manage your communications</p>    
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-4">
-            <h2>API Techical details</h2>
-            <ul class="list-unstyled text-muted">
-              <li>RESTful API (Python/Django)</li>
-              <li>PostgreSQL/PostGIS Spatial database</li>
-              <li>Admin panel</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2>App Techical details</h2>
-            <ul class="list-unstyled text-muted">
-              <li>Cordova platform</li>
-              <li>AngularJS + Ionic Framework</li>
-              <li>Facebook Login</li>
-              <li>OAuth 2.0</li>
-            </ul>
-          </div>
-          
-          <div class="col-md-4">
-            <h2>Highly Scalable</h2>
-            <ul class="list-unstyled text-muted">
-              <li>Ansible Deploy automation</li>
-              <li>Celery Distributed Task Queue</li>
-              <li>RabbitMQ</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row project-metadata">
-          <div class="col-md-12">
-            <p><strong>Client:</strong> <a href="http://rushhourcrush.com">Backbone Labs Ltd</a> <br><strong>Status:</strong> Beta</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -237,7 +306,6 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
