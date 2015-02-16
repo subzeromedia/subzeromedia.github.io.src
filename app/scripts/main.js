@@ -12,11 +12,18 @@ $(document).ready(function(){
     {
       items : 1,
       nav: true,
-      // navContainer: ".slides-nav",
       loop: true,
-      dots: true,
-      // autoplay: true
-
+      dots: true
     }
    );
+});
+
+$(function() {
+    $('body').on('click', '.page-scroll a', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
