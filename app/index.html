@@ -5,13 +5,16 @@
     <title>demo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel='stylesheet' href='bower_components/fontawesome/css/font-awesome.css' />
     <!-- endbower -->
     <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -30,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#page-top">Subzero Media</a>
+          <a class="navbar-brand" href="#header"><img src="images/logo.png"/>Subzero Media</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -41,9 +44,6 @@
               <a href="#portfolio">Portfolio</a>
             </li>
             <li class="page-scroll">
-              <a href="#about">About</a>
-            </li>
-            <li class="page-scroll">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -51,7 +51,7 @@
       </div>
     </nav>
     
-    <header>
+    <header id="header">
       <div class="img-overlay"></div>
       <div class="container">
         <div class="row">
@@ -62,6 +62,7 @@
             <div class="intro-text">
               <h1>Nik Grinkevich</h1>
               <h3>Full Stack Web Developer</h3>
+              <h4>Python / Django / RESTful APIs / PostgreSQL / Linux Administration / Ansible / AngularJS / Javascript / Grunt / HTML5 / CSS3 / SASS / Web Audio API</h4>
             </div>
           </div>
         </div>
@@ -74,8 +75,8 @@
     
       
     <section id="portfolio">
-      
-      <div id="owl-example" class="owl-carousel">
+
+      <div class="owl-carousel">
 
         <div class="rushhourcrush">
           <div class="container">
@@ -95,7 +96,7 @@
                 </a>
               </div>
               <div class="col-md-5 features">
-                <h2>Key Features</h2>
+                <h3>Key Features</h3>
                 <ul class="list-unstyled">
                   <li>
                     <h4><i class="fa fa-mobile"></i> Hybrid HTML5 app</h4>
@@ -119,7 +120,7 @@
             
             <div class="row">
               <div class="col-md-4">
-                <h2>API Techical details</h2>
+                <h3>API Techical details</h2>
                 <ul class="list-unstyled text-muted">
                   <li>RESTful API (Python/Django)</li>
                   <li>PostgreSQL/PostGIS Spatial database</li>
@@ -127,7 +128,7 @@
                 </ul>
               </div>
               <div class="col-md-4">
-                <h2>App Techical details</h2>
+                <h3>App Techical details</h2>
                 <ul class="list-unstyled text-muted">
                   <li>Cordova platform</li>
                   <li>AngularJS + Ionic Framework</li>
@@ -137,7 +138,7 @@
               </div>
               
               <div class="col-md-4">
-                <h2>Highly Scalable</h2>
+                <h3>Highly Scalable</h2>
                 <ul class="list-unstyled text-muted">
                   <li>Ansible Deploy automation</li>
                   <li>Celery Distributed Task Queue</li>
@@ -147,7 +148,7 @@
             </div>
             <div class="row project-metadata">
               <div class="col-md-12">
-                <p><strong>Client:</strong> <a href="http://rushhourcrush.com">Backbone Labs Ltd</a> <br><strong>Status:</strong> Beta</p>
+                <p><strong>Client:</strong> <a href="http://rushhourcrush.com">Backbone Labs Ltd</a> <br><strong>Status:</strong> Production</p>
               </div>
             </div>
           </div>
@@ -170,26 +171,26 @@
                 </a>
               </div>
               <div class="col-md-5 features">
-                <h2>Key Features</h2>
+                <h3>Key Features</h3>
                 <ul class="list-unstyled">
                   <li>
-                    <h3><i class="fa fa-search"></i> Search naturaly </h3>
+                    <h4><i class="fa fa-search"></i> Search naturaly </h4>
                     <p class="text-muted">e.g. 1 bedroom flat in Southwark near great parks</p> 
                   </li>
                   <li>
-                    <h3><i class="fa fa-globe"></i> Open Data aggregation</h3>
+                    <h4><i class="fa fa-globe"></i> Open Data aggregation</h4>
                     <p class="text-muted"><a href="http://data.police.uk">data.police.uk</a>, Google POI including schools and hospitals</p>    
                   </li>
                   <li>
-                    <h3><i class="fa fa-users"></i> Community driven data collection</h3>
+                    <h4><i class="fa fa-users"></i> Community driven data collection</h4>
                     <p class="text-muted">Neighbourhood reviews, Car Parks info, Nearby Parks</p>    
                   </li>
                   <li>
-                    <h3><i class="fa fa-envelope"></i> Email alerts</h3>
+                    <h4><i class="fa fa-envelope"></i> Email alerts</h4>
                     <p class="text-muted">Be the first to hear about new properties you're interested in.</p>    
                   </li>
                   <li>
-                    <h3><i class="fa fa-comments"></i> Private Messages</h3>
+                    <h4><i class="fa fa-comments"></i> Private Messages</h4>
                     <p class="text-muted">Easy to use interface to manage your communications</p>    
                   </li>
                 </ul>
@@ -229,7 +230,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <h2>Dashboard features</h2>
+                <h3>Dashboard features</h3>
                 <ul class="list-unstyled text-muted">
                   <li>Stats and analytics</li>
                   <li>Viewing requests & Offers</li>
@@ -239,7 +240,7 @@
                 </ul>
               </div>
               <div class="col-md-4">
-                <h2>Trader Features</h2>
+                <h3>Trader Features</h3>
                 <ul class="list-unstyled text-muted">
                   <li>Seller Profile</li>
                   <li>Bulk data & images upload</li>
@@ -249,7 +250,7 @@
                 </ul>
               </div>
               <div class="col-md-4">
-                <h2>Techical details</h2>
+                <h3>Techical details</h3>
                 <ul class="list-unstyled text-muted">
                   <li>PostgreSQL/PostGIS Spatial database</li>
                   <li>SOLR indexed search</li>
@@ -267,8 +268,208 @@
           </div>
 
         </div>
-      
-      </div>
+        
+        <div class="oscar">
+          <div class="container">
+            
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Oscar.ac.uk</h2>
+                <p class="lead text-muted">Online studio community at Reading</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-7">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/oscar.jpg" data-title="rushhourcrush.com" class="thumbnail">
+                  <img src="images/oscar.jpg">
+                </a>
+              </div>
+              <div class="col-md-5 features">
+                <h3>Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <h4><i class="fa fa-users"></i> A social media platform</h4>
+                    <p class="text-muted">Collaborative learning, enhanced engagement with staff and students</p> 
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-graduation-cap"></i> Support structure for art studio modules</h4>
+                    <p class="text-muted">Galleries for each studio group with discussion areas</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-comments"></i> Multiple Blogs</h4>
+                    <p class="text-muted">For visiting artists and student exhibitions</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-comments"></i> Build with latest technologies</h4>
+                    <p class="text-muted">DJANGO / PYTHON / ANSIBLE / POSTGRESQL</p>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+            <div class="row project-metadata">
+              <div class="col-md-12">
+                <p><strong>Client:</strong> <a href="http://www.oscar.ac.uk/">Reading University</a> <br><strong>Status:</strong> Production</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mcmilain">
+          <div class="container">
+            
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Sandisk E-Learning system</h2>
+                <p class="lead text-muted">Multi language, Interactive, SCORM compliant online E-Learning system to train staff and retailers in stores globally</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-7">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/sandisk.jpg" data-title="rushhourcrush.com" class="thumbnail no-border">
+                  <img src="images/sandisk.jpg">
+                </a>
+              </div>
+              <div class="col-md-5 features">
+                <h3>Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <h4><i class="fa fa-mobile"></i> Hybrid HTML5 app</h4>
+                    <p class="text-muted">Works on iOS, Android and Windows Phone</p> 
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-facebook-square"></i> Facebook Integration</h4>
+                    <p class="text-muted">Fetching profile details, photos and user interests</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-crosshairs"></i> Geo Location</h4>
+                    <p class="text-muted">HTML5 geolocation with GeoIP fallback</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-comments"></i> Private Messages</h4>
+                    <p class="text-muted">Easy to use interface to manage your communications</p>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-4">
+                <h3>API Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>RESTful API (Python/Django)</li>
+                  <li>PostgreSQL/PostGIS Spatial database</li>
+                  <li>Admin panel</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>App Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Cordova platform</li>
+                  <li>AngularJS + Ionic Framework</li>
+                  <li>Facebook Login</li>
+                  <li>OAuth 2.0</li>
+                </ul>
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Highly Scalable</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Ansible Deploy automation</li>
+                  <li>Celery Distributed Task Queue</li>
+                  <li>RabbitMQ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row project-metadata">
+              <div class="col-md-12">
+                <p><strong>Client:</strong> <a href="http://www.cyb.co.uk">Cyber Interactive</a> <br><strong>Status:</strong> Live</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mcmilain">
+          <div class="container">
+            
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Mcmillan </h2>
+                <p class="lead text-muted">A new social platform that helps people find each other and communicate efficiently</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-7">
+                <a data-toggle="modal" data-target="#previewModal" data-image-url="images/mcmillan.jpg" data-title="rushhourcrush.com" class="thumbnail">
+                  <img src="images/mcmillan.jpg">
+                </a>
+              </div>
+              <div class="col-md-5 features">
+                <h3>Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <h4><i class="fa fa-mobile"></i> Hybrid HTML5 app</h4>
+                    <p class="text-muted">Works on iOS, Android and Windows Phone</p> 
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-facebook-square"></i> Facebook Integration</h4>
+                    <p class="text-muted">Fetching profile details, photos and user interests</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-crosshairs"></i> Geo Location</h4>
+                    <p class="text-muted">HTML5 geolocation with GeoIP fallback</p>    
+                  </li>
+                  <li>
+                    <h4><i class="fa fa-comments"></i> Private Messages</h4>
+                    <p class="text-muted">Easy to use interface to manage your communications</p>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-4">
+                <h3>API Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>RESTful API (Python/Django)</li>
+                  <li>PostgreSQL/PostGIS Spatial database</li>
+                  <li>Admin panel</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>App Techical details</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Cordova platform</li>
+                  <li>AngularJS + Ionic Framework</li>
+                  <li>Facebook Login</li>
+                  <li>OAuth 2.0</li>
+                </ul>
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Highly Scalable</h2>
+                <ul class="list-unstyled text-muted">
+                  <li>Ansible Deploy automation</li>
+                  <li>Celery Distributed Task Queue</li>
+                  <li>RabbitMQ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row project-metadata">
+              <div class="col-md-12">
+                <p><strong>Client:</strong> <a href="http://rushhourcrush.com">Backbone Labs Ltd</a> <br><strong>Status:</strong> Beta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end owl-carousel -->
 
     </section>  
 
@@ -306,6 +507,8 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
