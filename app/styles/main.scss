@@ -152,20 +152,41 @@ section#portfolio {
     margin: 0 0 50px 0;
   }
 
-
+  // owl carousel 2
+  // .owl-controls {
+  //   position: absolute;
+  //   width: 100%;
+  //   top:-50px;
+  //   left: 0;
+  //   .owl-nav [class*=owl-] {
+  //     background: #45B5EA;
+  //   }
+  //   .owl-nav [class*=owl-]:hover {
+  //     background: #0FA2E7;
+  //   }
+    
+  // }
+  
+  // owl carousel 1
   .owl-controls {
     position: absolute;
     width: 100%;
     top:-50px;
     left: 0;
-    .owl-nav [class*=owl-] {
-      background: #45B5EA;
-    }
-    .owl-nav [class*=owl-]:hover {
-      background: #0FA2E7;
-    }
     
+    .owl-buttons {
+      div {
+        background: #45B5EA;
+        opacity: 1;
+      }
+
+      div:hover {
+        background: #0FA2E7;
+      }
+    } 
+  
   }
+
 
 
   .container {

@@ -7,13 +7,26 @@ $('#previewModal').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text(title);
 })
 
+// own carousel 2
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel(
+//     {
+//       items : 1,
+//       nav: true,
+//       loop: true,
+//       dots: true
+//     }
+//    );
+// });
+
+// own carousel 1
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
     {
       items : 1,
-      nav: true,
-      loop: true,
-      dots: true
+      navigation: true,
+      dots: true,
+      responsive: false
     }
    );
 });
