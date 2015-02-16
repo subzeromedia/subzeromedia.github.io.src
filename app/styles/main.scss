@@ -147,7 +147,7 @@ header {
 section#portfolio {
   margin: 0;
   padding-top: 100px;
-  
+  margin-bottom: -50px;
   .portfolio-header {
     margin: 0 0 50px 0;
   }
@@ -173,7 +173,7 @@ section#portfolio {
     width: 100%;
     top:-50px;
     left: 0;
-    
+
     .owl-buttons {
       div {
         background: #45B5EA;
@@ -236,27 +236,9 @@ section#portfolio {
 
 }
 
-// section.rushhourcrush {
-//   h2 {
-//     color: #DA3D5D;
-//   }
-// }
-
-// section.bigstreet {
-//   h2 {
-//     color: #B25438;
-//   }
-// }
-
-// section.rushhourcrush {
-//   h4 {
-//     color: #DA3D5D;
-//   }
-// }
-
-// section.bigstreet {
-//   h4 {
-//     color: #B25438;
-//   }
-// }
+section#contact {
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
 
